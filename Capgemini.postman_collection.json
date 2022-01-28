@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "0d1d6000-ca67-4543-a5bd-07ef00a7e272",
+		"name": "Capgemini",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PostCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": 12,\r\n  \"cardNumber\": 1234321423142314,\r\n  \"cvv\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/CustomerCard/PostCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"CustomerCard",
+						"PostCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostValidateToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": 12,\r\n  \"cardId\": \"8ea1ee6b-15d1-4591-95cf-f82fa4191913\",\r\n  \"token\": \"3142\",\r\n  \"cvv\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/CustomerCard/PostValidateToken/validate",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"CustomerCard",
+						"PostValidateToken",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
